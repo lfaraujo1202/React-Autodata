@@ -11,7 +11,7 @@ export const Container = styled.div<CardProps>`
         background: var(--purple);
         padding: 1rem 3.5rem;
         border-radius: 8px;
-        height: 430px;
+        height: 420px;
         width: 90%;
         margin-left: 32px;
         margin: 12px;
@@ -45,7 +45,7 @@ export const Container = styled.div<CardProps>`
         margin-top: 2rem;
         font-weight: 600;
         font-size: 0.9rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
 
     }
 
@@ -66,6 +66,8 @@ export const Container = styled.div<CardProps>`
         font-size: 0.8rem;
         font-weight: 600;
         text-transform: uppercase;
+        transition: 0.2s;
+        transform: translate;
     }
 
     button:hover {
@@ -80,9 +82,10 @@ export const Container = styled.div<CardProps>`
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin: 16px 0;
         font-family: 'Baloo 2', Arial, Helvetica, cursive;
+        font-weight: 500;
         position: absolute;
         margin-top: 130px;
     }
@@ -93,12 +96,14 @@ export const Container = styled.div<CardProps>`
         position: absolute;
     }
 
+    /* Show card name in background */
+
     .card:hover .icon::after {
         content: '${props => props.classname}';
         position: absolute;
         width: 30px;
         height: 30px;
-        font-size: 6rem;
+        font-size: 5rem;
         opacity: 0.03;
         margin-left: -8%;
         margin-top: 20px;

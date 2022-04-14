@@ -4,4 +4,6 @@ export interface CardProps {
     progress?: string;
     description?: string;
     courseimg?: string;
+    buttonName?: string;
+    textUnderBar?: string;
 }

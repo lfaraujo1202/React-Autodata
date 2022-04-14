@@ -23,9 +23,17 @@ body, input, textarea, button {
     color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6, strong {
+h1 {
     font-weight: 600;
     color: #ffffff;
+    font-family: 'Baloo 2', sans-serif;
+}
+
+h2, h3, h4, h5, h6, strong {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {

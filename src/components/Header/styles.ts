@@ -13,15 +13,19 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    a{
+    .nav-item button {
+        background: var(--purple);
+    }
+
+    .linkref {
     color: var(--white);
     text-decoration: none;
     font-size: 1.1rem;
     transform: scaleX(0);
     transition: all .3s ease-in-out;
-    
-}
-    a:hover {
+    }
+
+    .linkref:hover {
         color: var(--lightpurple);
         font-weight: 900;
     }

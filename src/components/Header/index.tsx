@@ -1,9 +1,7 @@
 import { Container, Content } from './styles'
 import logoImg from '../../assets/logo_text_white_1.png'
 import user from '../../assets/user.png'
-// import usermini from '../../assets/user-mini.png'
-// import icoaulas from '../../assets/ico-aulas.png'
-// import icologout from '../../assets/ico-logout.png'
+import { Link } from "react-router-dom";
 
 
 export function Header () {
@@ -19,10 +17,13 @@ export function Header () {
             <div className="containerMenu">
                 <ul className="nav-menu">
                     <li className="nav-item">
-                        <a href="home.html" className="nav-link">Home</a>
+                        <Link to={`/home`}><button><span className="linkref">Início</span></button></Link>
                     </li>
                     <li className="nav-item">
-                        <a href="aulas.html" className="nav-link">Aulas</a>
+                        <Link to={`/dashboard`}><button><span className="linkref">Cursos</span></button></Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to={`/watch`}><button><span className="linkref">Aulas</span></button></Link>
                     </li>
 
                 </ul>

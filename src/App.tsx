@@ -1,13 +1,25 @@
-import { GlobalStytle } from "./styles/global";
-import { Header } from "./components/Header";
-import { Grades } from "./components/Grades";
+import { PageDashboard } from "./Pages/Dashboard";
+import { PageWatch } from "./Pages/Watch";
+import { Home } from "./Pages/Home";
+import { PageLogin } from "./Pages/Login";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 export function App() {
   return (
     <>
-      <Header /> 
-      <Grades /> 
-      <GlobalStytle />
+      <Router>
+          <Switch>
+            <Route path="/home" component={Home}/>
+            <Route path="/dashboard" component={PageDashboard}/>
+            <Route path="/watch" component={PageWatch}/>
+            <Route path="/login" component={PageLogin}/>
+          </Switch>
+      </Router>
     </> 
   );
 }

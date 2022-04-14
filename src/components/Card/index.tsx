@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 import type { CardProps } from "./Card";
+import { Link } from "react-router-dom";
 
-
-export function Card({ progress = "0%", classname = "-", title, description = '-', courseimg = 'content1'}: CardProps) {
+export function Card({ progress = "0%", classname = "-", title, description = '-', courseimg = 'content1', buttonName, textUnderBar}: CardProps) {
     console.log(courseimg)
     return (
         <Container progress={progress} classname={classname}>
@@ -17,9 +17,8 @@ export function Card({ progress = "0%", classname = "-", title, description = '-
                     <div id="myBar">
                     </div>
                 </div>
-                <span className="currentclass"><strong>Aula atual:</strong> {title}</span>
-                
-                <a href="aulas.html"><button>Continuar assistindo</button></a>
+                <span className="currentclass"><strong>{textUnderBar}</strong> {title}</span>
+                <Link to={`/watch`}><button>{buttonName}</button></Link>
             </div>
         </Container>
     );
