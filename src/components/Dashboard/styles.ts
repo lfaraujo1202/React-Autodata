@@ -7,4 +7,12 @@ export const Container = styled.main`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+
+    .modal-button{
+        background-color: var(--lightpurple);
+        height: 30px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 `;

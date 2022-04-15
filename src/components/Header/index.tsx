@@ -3,7 +3,6 @@ import logoImg from '../../assets/logo_text_white_1.png'
 import user from '../../assets/user.png'
 import { Link } from "react-router-dom";
 
-
 export function Header () {
     return (
         <Container>
@@ -31,16 +30,9 @@ export function Header () {
 
             <div className="containerProfile">
                 <div className="profileArea">
-                    <img src={user} alt="Imagem de usuario"/>
-                </div>
+                <img src={user} alt="Imagem de usuario"/>
+            </div>
 
-                {/* <div className="menuProfile">
-                    <ul>
-                        <li><img src={usermini} alt="Icone de usuario"/><a href="">Meu perfil</a></li>
-                        <li><img src={icoaulas} alt="Iicone de aulas"/><a href="aulas.html">Aulas</a></li>
-                        <li><img src={icologout} alt="Icone de deslogar"/><a href="login.html">Sair</a></li>
-                    </ul>
-                </div> */}
             </div>
             </Content>
         </Container>
