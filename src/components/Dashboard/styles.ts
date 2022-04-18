@@ -15,4 +15,5 @@ export const Container = styled.main`
         margin-top: 20px;
         margin-left: 20px;
     }
+    
 `;
